@@ -10,13 +10,14 @@
         position: absolute;
         text-align: center;
         width: 1000px;
-        height:700px;
+        height:600px;
+        z-index: -1;
       }
       #signIn {
         width: 153px;
         height: 67px;
-        margin-top: 199%;
-        margin-left: 376%;
+        margin-top: 27%;
+        margin-left: 56.4%;
         border: 0;
         display: block;
         background-image: url(signInButton.jpg);
@@ -24,8 +25,8 @@
       #signUp {
         width: 153px;
         height: 65px;
-        margin-top: 254%;
-        margin-left: 376%;
+        margin-top: 1.8%;
+        margin-left: 56.4%;
         border: 0;
         display: block;
         background-image: url(signUpButton.jpg);
@@ -33,27 +34,23 @@
       #all {
         position: relative;
         width: 1000px;
-        height:700px;
+        height:600px;
       }
       #bg {
         margin-top: 10%;
         margin-left: 30%;
       }
-      #bt1 {
+      #bt {
         position: absolute;
         width: 1000px;
-        height:700px;
+        height:600px;
+        z-index: 1;
       }
       #signIn:hover {
         background-image: url(signInHover.jpg);
       }
       #signUp:hover {
         background-image: url(signUpHover.jpg);
-      }
-      #bt2 {
-        position: absolute;
-        width: 1000px;
-        height:700px;
       }
       body{
         font-family: cursive;
@@ -71,11 +68,10 @@
       <div id = "bgimg">
         <img id = "bg" src = "first.jpg"/>
       </div>
-      <div id = "bt1">
-        <button id = "signIn" border = "20px"></button>
-      </div>
-      <div id = "bt2">
+      <div id = "bt">
+        <button id = "signIn"></button>
         <button id = "signUp"></button>
+
       </div>
     </div>
   </body>
