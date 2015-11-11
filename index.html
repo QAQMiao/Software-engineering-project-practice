@@ -6,52 +6,42 @@
     </title>
     <meta http-eqiv = "content-type" content = "text/html;charset = utf-8" />
     <style type = "text/css">
-      #bgimg {
-        position: absolute;
+      body
+      {
+        width: 100%;
+        height: 100%;
+      }
+      .bgimg {
         text-align: center;
-        width: 1000px;
-        height:600px;
+        background: url(first.jpg) no-repeat center;
+        margin-top: 50px;
+        padding: 100px;
+        display: block;
+        /*margin: 1% 23%;*/
         z-index: -1;
       }
-      #signIn {
+      .signIn {
         width: 153px;
-        height: 67px;
-        margin-top: 27%;
-        margin-left: 56.4%;
+        height: 65px;
+        margin: auto;
+        margin-top: 95px;
         border-width: 0px;
         display: block;
         background-image: url(signInButton.jpg);
-        border-style: outset;
       }
-      #signUp {
+      .signUp {
         width: 153px;
         height: 65px;
-        margin-top: 1.8%;
-        margin-left: 56.4%;
+        margin: auto;
+        margin-top: 10px;
         border-width: 0px;
         display: block;
         background-image: url(signUpButton.jpg);
-        border-style: outset;
       }
-      #all {
-        position: relative;
-        width: 1000px;
-        height:600px;
-      }
-      #bg {
-        margin-top: 10%;
-        margin-left: 30%;
-      }
-      #bt {
-        position: absolute;
-        width: 1000px;
-        height:600px;
-        z-index: 1;
-      }
-      #signIn:hover {
+      .signIn:hover {
         background-image: url(signInHover.jpg);
       }
-      #signUp:hover {
+      .signUp:hover {
         background-image: url(signUpHover.jpg);
       }
       body{
@@ -66,15 +56,9 @@
     </style>
   </head>
   <body>
-    <div id = "all">
-      <div id = "bgimg">
-        <img id = "bg" src = "first.jpg"/>
-      </div>
-      <div id = "bt">
-        <button id = "signIn"></button>
-        <button id = "signUp"></button>
-
-      </div>
+    <div class = "bgimg">
+      <button class = "signIn"></button>
+      <button class = "signUp"></button>
     </div>
   </body>
 </html>
