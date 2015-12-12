@@ -1,0 +1,45 @@
+body {
+  height: 800px;
+  background: -moz-linear-gradient(top,#8bc3fc,#ffffff);/*火狐*/
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(#8bc3fc), to(#ffffff));/*谷歌*/
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#8bc3fc), to(#ffffff));      /* Safari 4-5, Chrome 1-9*/
+  background: -webkit-linear-gradient(top, #8bc3fc, #ffffff);   /*Safari5.1 Chrome 10+*/
+  background: -o-linear-gradient(top, #8bc3fc, #ffffff);  /*Opera 11.10+*/
+  padding-right: 250px;
+  padding-top: 100px;
+}
+#left {
+  float: left;
+}
+#right {
+  float: right;
+  width: 240px;
+  height: 340px;
+  padding: 30px;
+  background: #ffffff;
+}
+#right h4 {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+#username {
+  background: url(login-locked-icon.png) 15px center no-repeat;
+}
+#password {
+  background: url(login-key-icon.png) 15px center no-repeat;
+}
+#username,
+#password {
+  width: 100%;
+  padding: 8px 0;
+  border: 2px solid #e1e1e1;
+  margin-bottom: 20px;
+  text-indent: 43px;
+}
+#remember_me {
+  vertical-align: middle;
+}
+#forget_psw {
+  float: right;
+  color: #bcbcbc;
+}

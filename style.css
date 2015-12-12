@@ -1,0 +1,37 @@
+body {
+  width: 100%;
+  height: 100%;
+  font-family: cursive;
+}
+.bgimg {
+  display: block;
+  margin-top: 50px;
+  padding: 100px;
+  text-align: center;
+  background: url(first.jpg) no-repeat center;
+  z-index: -1;
+}
+.sign_in {
+  display: block;
+  width: 153px;
+  height: 65px;
+  margin: auto;
+  margin-top: 95px;
+  border-width: 0;
+  background-image: url(signInButton.jpg);
+}
+.sign_up {
+  display: block;
+  width: 153px;
+  height: 65px;
+  margin: auto;
+  margin-top: 10px;
+  border-width: 0;
+  background-image: url(signUpButton.jpg);
+}
+.sign_in:hover {
+  background-image: url(signInHover.jpg);
+}
+.sign_up:hover {
+  background-image: url(signUpHover.jpg);
+}
