@@ -47,9 +47,11 @@ body {
 #submit {
   margin-top: 35px;
   width: 100%;
-  height: 35px;
+  height: 38px;
   font-size: 14px;
-  letter-spacing: 5px;
+  letter-spacing: 15px;
+  background: #c4e1fe;
+  border: 0;
 }
 hr {
   margin-top: 40px;
