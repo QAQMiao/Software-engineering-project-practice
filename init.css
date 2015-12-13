@@ -1,5 +1,5 @@
 /* 清除内外边距 */
-body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, /* structural elements 结构元素 */
 dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
 pre, /* text formatting elements 文本格式元素 */
 fieldset, lengend, button, input, textarea, /* form elements 表单元素 */
@@ -53,10 +53,10 @@ border-spacing: 0;
 }
 
 /* 重置 hr */
-hr {
+/*hr {
     border: none;
     height: 1px;
-}
+}*/
 body{
   line-height: 1.7em;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;

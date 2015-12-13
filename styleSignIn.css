@@ -44,3 +44,13 @@ body {
   float: right;
   color: #bcbcbc;
 }
+#submit {
+  margin-top: 35px;
+  width: 100%;
+  height: 35px;
+  font-size: 14px;
+  letter-spacing: 5px;
+}
+hr {
+  margin-top: 40px;
+}
