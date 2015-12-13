@@ -5,11 +5,11 @@ body {
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#8bc3fc), to(#ffffff));      /* Safari 4-5, Chrome 1-9*/
   background: -webkit-linear-gradient(top, #8bc3fc, #ffffff);   /*Safari5.1 Chrome 10+*/
   background: -o-linear-gradient(top, #8bc3fc, #ffffff);  /*Opera 11.10+*/
-  padding-right: 250px;
+  padding-right: 20%;
   padding-top: 100px;
 }
 #left {
-  float: left;
+  float: right;
 }
 #right {
   float: right;
@@ -17,6 +17,7 @@ body {
   height: 340px;
   padding: 30px;
   background: #ffffff;
+  margin-left: 10%;
 }
 #right h4 {
   font-size: 14px;
