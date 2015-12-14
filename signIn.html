@@ -10,16 +10,19 @@
   <div id = "right">
     <h4>账号登陆</h4>
     <form action="main.html" method = "post">
-      <input type="text" id = "username" placeholder = "输入用户名/邮箱" tabindex = "1"></input>
+      <input type="text" id = "username" placeholder = "输入用户名[学号]" tabindex = "1"></input>
       <input type="password" id = "password" placeholder = "输入密码" tabindex = "2"></input>
+      <div>
+        <span class = "wrong_msg">用户名或密码有误，请重新输入</span>
+        <a href="" id = "forget_psw">忘记密码</a>
+      </div>
       <input type="checkbox" id = "remember_me">
       <label for = "remember_me">下次自动登陆</label>
-      <a href="" id = "forget_psw">忘记密码</a>
       <input type="submit" value = "登 陆" id = "submit"/>
     </form>
     <hr />
     <scan>还没有账号？</scan>
-    <a href="">立即注册</a>
+    <a href="signUp.html">立即注册</a>
   </div>
   <div id = "left">
     <img src="bu.png" alt="布神镇楼">

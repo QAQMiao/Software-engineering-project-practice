@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+  <link rel="stylesheet" type="text/css" href="init.css"></link>
+  <link rel="stylesheet" type="text/css" href="styleSignUp.css" ></link>
+</head>
+<body>
+  <div id = "right">
+    <h4>账号注册</h4>
+    <form action="main.html" method = "post">
+      <input type="text" id = "username" placeholder = "输入用户名[学号]" tabindex = "1"></input>
+      <input type="text" id = "nickname" placeholder = "输入昵称" tabindex = "2"></input>
+      <input type="password" id = "password" placeholder = "输入密码" tabindex = "3"></input>
+      <input type="password" id = "password_confirm" placeholder = "再次输入密码" tabindex = "4"></input>
+      <input type="submit" value = "注 册" id = "submit"/>
+      <div id = "bottom">
+        <span class = "wrong_msg">用户名已被注册</span>
+        <a href="signIn.html" id = "have_account">已有账户</a>
+      </div>
+    </form>
+  </div>
+  <div id = "left">
+    <img src="bu.png" alt="布神镇楼">
+  </div>
+</body>
+</html>
