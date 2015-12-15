@@ -1,10 +1,10 @@
 body {
   height: 540px;
-  background: -moz-linear-gradient(top,#8bc3fc,#ffffff);/*火狐*/
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(#8bc3fc), to(#ffffff));/*谷歌*/
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#8bc3fc), to(#ffffff));      /* Safari 4-5, Chrome 1-9*/
+  background: -moz-linear-gradient(top,#977fc9,#ffffff);/*火狐*/
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(#977fc9), to(#ffffff));/*谷歌*/
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#977fc9), to(#ffffff));      /* Safari 4-5, Chrome 1-9*/
   background: -webkit-linear-gradient(top, #977fc9, #ffffff);   /*Safari5.1 Chrome 10+*/
-  background: -o-linear-gradient(top, #8bc3fc, #ffffff);  /*Opera 11.10+*/
+  background: -o-linear-gradient(top, #977fc9, #ffffff);  /*Opera 11.10+*/
   padding-right: 20%;
   padding-top: 100px;
 }
