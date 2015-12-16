@@ -1,5 +1,5 @@
 $("#submit").on('click', function () {
-    var url = '/mcstudysystem/login/'
+    var url = '/mcstudysystem/login/';
     $.ajax({
         type: 'POST',
         data:{

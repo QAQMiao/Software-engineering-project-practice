@@ -12,3 +12,35 @@ body {
   height: 100px;
   background: url(logo.png) center no-repeat;
 }
+h2 {
+  font-size: 30px;
+}
+#plan {
+  float: left;
+  width: 40%;
+  margin-left: 200px;
+  margin-top: 50px;
+  background: #ffffff;
+  padding: 30px;
+}
+.radius {
+  border-radius: 15px;
+}
+hr {
+  border: 1px solid #069dd5;
+}
+#add {
+  float: left;
+  height: 30px;
+  border: 0;
+  text-decoration: underline;
+  background: transparent;
+}
+#right {
+  float: left;
+  background: yellow;
+  width: 20%;
+  height: 400px;
+  padding: 60px;
+  margin-top: 50px;
+}
