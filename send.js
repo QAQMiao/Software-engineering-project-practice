@@ -1,5 +1,4 @@
 var result = {{resCode}};
-alert("asdf");
 if(result == 1)
 {
   $(".wrong_msg").show();
