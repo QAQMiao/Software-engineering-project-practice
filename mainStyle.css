@@ -39,7 +39,6 @@ hr {
 #right {
   position: fixed;
   right: 11.8%;
-  background: yellow;
   width: 20%;
   height: 300px;
   padding: 60px;
@@ -64,10 +63,25 @@ hr {
   border: 2px solid #e1e1e1;
 }
 .start {
-  background: yellow;
+  background: #c0b2df;
+  border: 1px solid;
+  padding: 2px;
   font-size: 16px;
 }
 fieldset table {
   width: 100%;
   font-size: 16px;
+}
+#close {
+  width: 200px;
+  height: 200px;
+  border: 3px dotted #fff;
+  margin-left: 40px;
+  font-size: 50px;
+  font-family:  "宋体",sans-serif;
+  color: #fff;
+  background: #c0b2df;
+}
+.radius_circle {
+  border-radius: 100px;
 }
