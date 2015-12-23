@@ -9,7 +9,7 @@ function exit(){
     success: function(){
         alert('200 ')
       },
-      dataType: 'html',
-      async: false
+    dataType: 'html',
+    async: false
   });
 }
