@@ -1,21 +1,21 @@
-if($("#password").val() == $("#password_comfirm").val())
+var result;
+alert("asdf");
+if(result == 1)
 {
-  $("#submit").on('click', function () {
-    var url = '';
-    $.ajax({
-      type: 'POST',
-      data:{
-        username: $("#username").val(),
-        password: $("#password").val(),
-        nickname: $("#nickname").val(),
-        submit: $("#submit").val()
-      },
-      url: url,
-      success: function(){
-          alert('200 ')
-      },
-      dataType: 'html',
-      async: false
-    });
-  });
+  $(".wrong_msg").show();
 }
+$("#submit").on('click', function () {
+  var url = '/mcstudysystem/login/';
+  $.ajax({
+    type: 'POST',
+    data:{
+      username: $("#username").val(),
+      password: $("#password").val(),
+      checkbox: $("#remember_me").val(),
+      submit: $("#submit").val()
+    },
+    url: url,
+    dataType: 'html',
+    async: false
+  });
+});
