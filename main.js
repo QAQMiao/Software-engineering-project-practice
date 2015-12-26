@@ -1,15 +1,17 @@
-function exit(){
-  var url = "";
+$("#submit").on('click', function () {
+  var url = '/mcstudysystem/main/';
   $.ajax({
-    type: "POST",
-    data: {
-      exit: "true"
+    type: 'POST',
+    data:{
+	  type:"1",
+      pname: $("#pname").val(),
+      totalTime: $("#totalTime").val(),
+      year: $("#year").val(),
+      month: $("#month").val(),
+	  day: $("#day").val()
     },
     url: url,
-    success: function(){
-        alert('200 ')
-      },
     dataType: 'html',
     async: false
   });
-}
+});

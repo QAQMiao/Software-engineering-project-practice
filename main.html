@@ -8,72 +8,95 @@
 </head>
 <body>
   <div id = "head">
-    <a href="" id = "exit">注销</a>
+    <a href="index.html" id = "exit">注销</a>
   </div>
   <div id = "plan" class = "radius">
     <h2>{{nickname}}の今日计划</h2>
     <hr />
-    <fieldset class = "fld">
-      <legend class = "plan">计划2</legend>
-      <table>
-        <tr>
-          <td>学习课程：</td>
-          <td>剩余时长：</td>
-          <td><button class = "start">开始此计划</button></td>
-        </tr>
-      </table>
-    </fieldset>
-    <fieldset class = "fld">
-      <legend class = "plan">计划2</legend>
-      <table>
-        <tr>
-          <td>学习课程：</td>
-          <td>剩余时长：</td>
-          <td><button class = "start">开始此计划</button></td>
-        </tr>
-      </table>
-    </fieldset>
-    <fieldset class = "fld">
-      <legend class = "plan">计划2</legend>
-      <table>
-        <tr>
-          <td>学习课程：</td>
-          <td>剩余时长：</td>
-          <td><button class = "start">开始此计划</button></td>
-        </tr>
-      </table>
-    </fieldset>
-    <fieldset class = "fld">
-      <legend class = "plan">计划2</legend>
-      <table>
-        <tr>
-          <td>学习课程：</td>
-          <td>剩余时长：</td>
-          <td><button class = "start">开始此计划</button></td>
-        </tr>
-      </table>
-    </fieldset>
-    <fieldset class = "fld">
-      <legend class = "plan">计划2</legend>
-      <table>
-        <tr>
-          <td>学习课程：</td>
-          <td>剩余时长：</td>
-          <td><button class = "start">开始此计划</button></td>
-        </tr>
-      </table>
-    </fieldset>
-    <p>当前没有计划</p>
+    <p id = "none">当前没有计划</p>
     <button id = "add" onclick = "add()">+添加计划</button>
-    <br />
-    <br />
-    <br />
-    <br />
   </div>
   <div id = "right">
     <button id = "close" class = "radius_circle">离 开</button>
   </div>
   <script type="text/javascript" src = "jquery.min.js"></script>
+  <script type="text/javascript">
+    var planList = {{ planList | safe}};
+    var c = false;
+    for(var i in planList)
+    {
+      c = true;
+      $("<fieldset class = \"fld\"><legend class = \"plan\">jihua</legend><table class = \"Table\"><tr><td class = \"course\">学习课程：</td><td class = \"left\">剩余时长：</td><td><button class = \"start\"></button></td></tr><tr><td colspan = \"3\" class = \"deadline\">截止日期：</td></tr><tr><td colspan = \"3\" class = \"fid\"></td></tr></table></fieldset>").insertAfter($("hr"));
+    }
+    if(c)
+      $("p").hide();
+    var $legend = $("fieldset > legend");
+    var cnt = 0;
+    $legend.each(
+      function(){
+        ++cnt;
+        $(this).html("计划" + cnt);
+      }
+    );
+    var planList = {{planList|safe}};
+    var $course = $(".course");
+    var $left = $(".left");
+    var $deadline = $(".deadline");
+    var $start = $(".start");
+    cnt = 0;
+    $course.each(
+      function(){
+        $(this).html("学习课程：" + planList[cnt].cname);
+        ++cnt;
+      }
+    );
+    cnt = 0;
+    $left.each(
+      function(){
+        $(this).html("剩余时长：" + planList[cnt].remaindertime + "小时");
+        ++cnt;
+      }
+    );
+    cnt = 0;
+    $deadline.each(
+      function(){
+        $(this).html("截止日期：" + planList[cnt].deadline);
+        ++cnt;
+      }
+    );
+    cnt = 0;
+    $start.each(
+      function(){
+        $(this).attr("name",planList[cnt].fid);
+        ++cnt;
+      }
+    );
+  </script>
+  <script type="text/javascript">
+  $(".start").toggle(
+    function(){
+      $(this).css("background","url('暂停.jpg')");
+    },
+    function(){
+      $(this).css("background","url('开始.jpg')");
+      var url = 'main.html';
+      $.ajax({
+        type: 'POST',
+        data:{
+          type:0,
+          completeTime: 0.1,
+          fid: $(this).prop("name"),
+        },
+        url: url,
+        dataType: 'html',
+        async: false
+      });
+    }
+  );
+  function add(){
+    $("<fieldset class = \"fld\"><legend class = \"plan\">新计划</legend><form><table class = \"Table\"><tr class = \"new\"><td class = \"ad1\">学习课程：<input type = \"text\" id = \"pname\"></input></td><td class = \"ad1\">剩余时长：<input type = \"text\" id = \"totalTime\"></input></td><td><input type = \"submit\" id = \"submit\" value=\"\"></input></td></tr><tr class =\"new\"><td colspan = \"3\">截止日期：<input type = \"text\" id = \"year\"></input>年 <input type = \"text\" id = \"month\"></input>月 <input type = \"text\" id = \"day\"></input>日</td></tr></table></form></fieldset>").insertBefore("#add")
+  }
+  </script>
   <script type="text/javascript" src= "main.js"></script>
-</body>
+  </body>
 </html>
