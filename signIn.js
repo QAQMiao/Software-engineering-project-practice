@@ -1,9 +1,3 @@
-var result;
-alert("asdf");
-if(result == 1)
-{
-  $(".wrong_msg").show();
-}
 $("#submit").on('click', function () {
   var url = '/mcstudysystem/login/';
   $.ajax({

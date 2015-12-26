@@ -4,14 +4,22 @@
   <meta charset="UTF-8">
   <title>Sign In</title>
   <link rel="stylesheet" type="text/css" href="init.css"></link>
-  <link rel="stylesheet" type="text/css" href="styleSignIn.css" ></link>
+  <link rel="stylesheet" type="text/css" href="signInStyle.css" ></link>
 </head>
 <body>
+  <script type="text/javascript">
+    function changeImg(){
+      $("#bu").attr("src","bu_1.png");
+    }
+    function changeImgToo(){
+      $("#bu").attr("src","bu.png");
+    }
+  </script>
   <div id = "right">
     <h4>账号登陆</h4>
     <form id = "sign_in">
-      <input type="text" id = "username" placeholder = "输入用户名[学号]" tabindex = "1"></input>
-      <input type="password" id = "password" placeholder = "输入密码" tabindex = "2"></input>
+      <input type="text" id = "username" onfocus ="changeImgToo()" placeholder = "输入用户名[学号]" tabindex = "1"></input>
+      <input type="password" id = "password" placeholder = "输入密码" onfocus = "changeImg()" tabindex = "2"></input>
       <div>
         <span class = "wrong_msg">用户名或密码有误，请重新输入</span>
         <a href="" id = "forget_psw">忘记密码</a>
@@ -25,7 +33,7 @@
     <a href="signUp.html">立即注册</a>
   </div>
   <div id = "left">
-    <img src="bu.png" alt="布神镇楼">
+    <img src="bu.png" id = "bu" alt="布神镇楼">
   </div>
   <script type="text/javascript" src = "jquery.min.js"></script>
   <script type="text/javascript">
@@ -35,6 +43,9 @@
       $(".wrong_msg").show();
     }
   </script>
-  <script type="text/javascript" src = "send.js"></script>
+  <script type="text/javascript">
+    $("#username").focus();
+  </script>
+  <script type="text/javascript" src = "signIn.js"></script>
 </body>
 </html>
