@@ -15,10 +15,26 @@
     <h2>{{nickname}}の今日计划</h2>
     <hr />
     <p id = "none">当前没有计划</p>
+    <fieldset class = "fld" hidden>
+      <legend class = "plan">新计划</legend>
+      <form>
+        <table class = "Table">
+          <tr class = "new">
+            <td class = "ad1">学习课程：<input type = "text" id = "pname"></input></td>
+            <td class = "ad1">剩余时长：<input type = "text" id = "totalTime"></input></td>
+            <td><input type = "submit" class = "submit" value=""></input></td>
+          </tr>
+          <tr class ="new">
+            <td colspan = "3">截止日期：<input type = "text" id = "year"></input>年 <input type = "text" id = "month"></input>月 <input type = "text" id = "day"></input>日
+            </td>
+          </tr>
+        </table>
+      </form>
+    </fieldset>
     <button id = "add" onclick = "add()">+添加计划</button>
   </div>
   <div id = "right">
-    <button id = "close" class = "radius_circle">离 开</button>
+    <button id = "close" class = "radius_circle" onclick = "window.opener=null;window.open('','_self');window.close();">离 开</button>
   </div>
   <script type="text/javascript" src = "jquery.min.js"></script>
   <script type="text/javascript">
@@ -95,7 +111,9 @@
     }
   );
   function add(){
-    $("<fieldset class = \"fld\"><legend class = \"plan\">新计划</legend><form><table class = \"Table\"><tr class = \"new\"><td class = \"ad1\">学习课程：<input type = \"text\" id = \"pname\"></input></td><td class = \"ad1\">剩余时长：<input type = \"text\" id = \"totalTime\"></input></td><td><input type = \"submit\" id = \"submit\" value=\"\"></input></td></tr><tr class =\"new\"><td colspan = \"3\">截止日期：<input type = \"text\" id = \"year\"></input>年 <input type = \"text\" id = \"month\"></input>月 <input type = \"text\" id = \"day\"></input>日</td></tr></table></form></fieldset>").insertBefore("#add")
+    $("fieldset:hidden legend").html("新计划");
+    $(".submit").css("width","100px");
+    $("fieldset:hidden").show();
   }
   </script>
   <script type="text/javascript" src= "main.js"></script>

@@ -6,7 +6,7 @@ $("#submit").on('click', function () {
       username: $("#username").val(),
       password: $("#password").val(),
       checkbox: $("#remember_me").val(),
-      submit: $("#submit").val()
+      submit: $("#submit").attr("checked")
     },
     url: url,
     dataType: 'html',
