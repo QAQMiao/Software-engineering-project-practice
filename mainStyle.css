@@ -25,7 +25,7 @@ fieldset table {
 .radius_circle {
   border-radius: 100px;
 }
-.course ,.ad1{
+.course ,.ad1 {
   width: 40%;
 }
 .left {
@@ -54,7 +54,7 @@ fieldset table {
 #head {
   width: 100%;
   height: 100px;
-  background: url(logo.png) center no-repeat;
+  background: url("logo.png") center no-repeat;
 }
 #plan {
   float: left;
@@ -101,7 +101,7 @@ fieldset table {
 #close:active {
   background: #BB54F1;
 }
-#submit {
+.submit {
   background: url("提交.jpg") center;
   width:100px;
   height: 60px;
