@@ -1,0 +1,108 @@
+body {
+  min-height: 642px;
+  background: -moz-linear-gradient(top,#069dd5,#ffffff);/*火狐*/
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(#069dd5), to(#ffffff));/*谷歌*/
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#069dd5), to(#ffffff));      /* Safari 4-5, Chrome 1-9*/
+  background: -webkit-linear-gradient(top, #069dd5, #ffffff);   /*Safari5.1 Chrome 10+*/
+  background: -o-linear-gradient(top, #069dd5, #ffffff);  /*Opera 11.10+*/
+}
+h2 {
+  font-size: 30px;
+}
+hr {
+  border: 1px solid #069dd5;
+}
+fieldset table {
+  width: 100%;
+  font-size: 16px;
+}
+.new input {
+  width: 80px;
+}
+.radius {
+  border-radius: 15px;
+}
+.radius_circle {
+  border-radius: 100px;
+}
+.course ,.ad1 {
+  width: 40%;
+}
+.left {
+  width: 40%;
+}
+.plan {
+  font-size: 24px;
+}
+.fld {
+  padding: 10px;
+  margin-top: 20px;
+  border: 2px solid #e1e1e1;
+}
+.start {
+  background: url("开始.jpg") center;
+  width:100px;
+  height: 60px;
+  boder: 0;
+  padding: 2px;
+  font-size: 16px;
+  border-radius: 3px;
+}
+.Table {
+  margin-bottom: 20px;
+}
+#head {
+  width: 100%;
+  height: 100px;
+  background: url("logo.png") center no-repeat;
+}
+#plan {
+  float: left;
+  width: 40%;
+  margin-left: 200px;
+  margin-top: 50px;
+  background: #ffffff;
+  padding: 30px;
+}
+#add {
+  float: left;
+  height: 30px;
+  border: 0;
+  text-decoration: underline;
+  background: transparent;
+}
+#right {
+  position: fixed;
+  right: 11.8%;
+  width: 20%;
+  height: 300px;
+  padding: 60px;
+  margin-top: 50px;
+}
+#exit{
+  margin: 10px;
+  float: right;
+  background: transparent;
+  border: 0;
+  font-size: 14px;
+  text-decoration: underline;
+  color: #fff;
+}
+#close {
+  width: 200px;
+  height: 200px;
+  border: 3px dotted #fff;
+  margin-left: 40px;
+  font-size: 50px;
+  font-family:  "宋体",sans-serif;
+  color: #fff;
+  background: #ca62ff;
+}
+#close:active {
+  background: #BB54F1;
+}
+.submit {
+  background: url("提交.jpg") center;
+  width:100px;
+  height: 60px;
+}

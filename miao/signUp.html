@@ -9,6 +9,14 @@
   <link rel="stylesheet" type="text/css" href="signUpStyle.css" ></link>
 </head>
 <body>
+  <script type="text/javascript">
+    function changeImg(){
+      $("#bu").attr("src","bu_1.png");
+    }
+    function changeImgToo(){
+      $("#bu").attr("src","bu.png");
+    }
+  </script>
   <div id = "right">
     <h4>账号注册</h4>
     <form action="main.html" id ="ff">
@@ -27,17 +35,6 @@
     <img src="bu_1.png" id = "bu"alt="布神镇楼">
   </div>
   <script type="text/javascript" src = "jquery.min.js"></script>
-  <script type="text/javascript">
-    $("body").css("height",$(window).height());
-  </script>
-  <script type="text/javascript">
-    function changeImg(){
-      $("#bu").attr("src","bu_1.png");
-    }
-    function changeImgToo(){
-      $("#bu").attr("src","bu.png");
-    }
-  </script>
   <script type="text/javascript">
     $("#username").focus();
   </script>

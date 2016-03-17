@@ -38,9 +38,6 @@
   </div>
   <script type="text/javascript" src = "jquery.min.js"></script>
   <script type="text/javascript">
-    $("body").css("height",$(window).height());
-  </script>
-  <script type="text/javascript">
     var planList = {{ planList | safe}};
     var c = false;
     for(var i in planList)
@@ -116,7 +113,7 @@
   function add(){
     $("fieldset:hidden legend").html("新计划");
     $(".submit").css("width","100px");
-    $("fieldset:hidden").show(1000);
+    $("fieldset:hidden").show(400);
   }
   </script>
   <script type="text/javascript" src= "main.js"></script>
